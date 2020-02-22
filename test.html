@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+	<style type="text/css">
+		.imag1{
+			position: absolute;
+  			top: 10%;
+  			width: 500px;
+  			height: 500px;
+  			background-image: url("5d4e9a9fc0bf2 - Copy.png");
+  			background-size: 100% 100%;
+  			background-repeat: no-repeat;
+  			text-align: center;
+		}
+		.imag2{
+			position: absolute;
+  			top: 10%;
+  			width: 500px;
+  			height: 500px;
+  			background-image: url("adrien-ledoux-vPBM-3_-N10-unsplash.jpg");
+  			background-size: 100% 100%;
+  			background-repeat: no-repeat;
+  			text-align: center;
+		}
+		.imag3{
+			position: absolute;
+  			top: 10%;
+  			width: 500px;
+  			height: 500px;
+  			background-image: url("517185-PIJFY2-387.jpg");
+  			background-size: 100% 100%;
+  			background-repeat: no-repeat;
+  			text-align: center;
+		}
+	</style>
+<body>
+	<div class="imag1" id="ch">
+	</div>
+</body>
+<script type="text/javascript">
+		setTimeout(function(){function2()},2000);
+		function function2(){
+			var el=document.getElementById("ch");
+			el.classList.add("imag2");
+			setTimeout(function(){function3()},2000);
+		}
+		function function3(){
+			var el=document.getElementById("ch");
+			el.classList.add("imag3");
+			setTimeout(function(){function1()},2000);
+		}
+		function function1(){
+			var el=document.getElementById("ch");
+			el.classList.remove("imag3");
+			el.classList.remove("imag2");
+			setTimeout(function(){function2()},2000);
+		}
+</script>
+</html>
